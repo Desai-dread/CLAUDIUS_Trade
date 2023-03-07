@@ -1,0 +1,33 @@
+<html>
+<link rel="stylesheet" href="static/trade.css">
+<head>
+	<div class="header">
+		<title>trade</title>
+		<div class="title">
+			<h1>Claudius</h1>
+		</div>
+		<div class="call">Контакты</div>
+		<div class="login">Вход</div>
+	</div>
+</head>
+<body>
+	<div class="cards">
+		{% for card in cards %}
+		<div class="card">
+			<div class="card_top">
+				<a href="" class="card_image">
+					<img src="{{ src }}" alt=""></img>
+				</a>
+			</div>
+			<div class="card_botom">
+				<div class="card_price">1000</div>
+				<a href="" class="card_title">
+					Купон
+				</a>
+				<button class="card_trade">Обменять</button>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</body>
+</html>
