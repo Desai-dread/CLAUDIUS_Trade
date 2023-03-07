@@ -1,3 +1,17 @@
+.header{
+	background: #6495ED;
+	position: relative;
+}
+.title{
+	color: white;
+}
+.call{	
+}
+.login{
+}
+
+
+
 .cards { /*для сетки*/
   display: grid;
   grid-template-columns: repeat(auto-fill, 225px);
@@ -75,3 +89,4 @@
   font-size: 20px;
   line-height: 150%;
 }
+
