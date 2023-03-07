@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/trade.css">
+    <title>Trade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!--Header-->
+<div class="header">
+     <div class="header_line">
+        <div class="title">
+            <h1>Claudius</h1>
+        </div>
+        <div class="nav">
+            <span class="nav_item cookie" >Пряники: xxxxx</span>
+            <a class="nav_item" href="#">Главная страница</a>
+            <a class="nav_item" href="#">Личный кабинет</a>
+            <a class="nav_item" href="#">Курсы</a>
+            <a class="nav_item" href="#">Выход</a>
+        </div>
+     </div>
+</div>
+
+<!--Cards-->
+<div class="cards">
+    {% for card in cards %}
+    <div class="card">
+        <div class="card_top">
+            <a href="" class="card_image">
+                <img src="{{ src }}" alt=""></img>
+            </a>
+        </div>
+        <div class="card_botom">
+            <div class="card_price">1000</div>
+            <a href="" class="card_title">
+                Купон
+            </a>
+            <button class="card_trade">Обменять</button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
